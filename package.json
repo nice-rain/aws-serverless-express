@@ -1,0 +1,23 @@
+{
+  "name": "aws-serverless-express",
+  "version": "1.0.0",
+  "description": "test app for deploying express to a serverless back-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nice-rain/aws-serverless-express.git"
+  },
+  "keywords": [
+    "serverless",
+    "express"
+  ],
+  "author": "NiceRain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nice-rain/aws-serverless-express/issues"
+  },
+  "homepage": "https://github.com/nice-rain/aws-serverless-express#readme"
+}
