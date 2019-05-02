@@ -1,0 +1,18 @@
+service: aws-serverless-express
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: us-east-1
+
+# We only have one function called 'app'
+# We use broad matching (any route on this domain) to handle requests. Express will handle the individual responses.
+# In theory, we could specify different event routes for different functions if we wanted to split up our API
+#   Not sure if it's a best practice to use ANY here any route inside our lambda or not
+functions:
+  app:
+    handler: index.handler
+    events:
+      - http: ANY /  
+      - http: 'ANY {proxy+}'
