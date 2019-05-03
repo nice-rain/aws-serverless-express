@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 //Root get request/response
-app.get('/', function (req, res) {
+app.get('/express', function (req, res) {
   res.status(200).send('Hello World!')
 });
 
